@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ClickActivity"></activity>
+        <activity
+            android:name=".ShapeActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".NineActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ImageScaleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClickActivity"
+            android:exported="true" />
         <activity
             android:name=".bbs"
             android:exported="true" />

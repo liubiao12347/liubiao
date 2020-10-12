@@ -23,5 +23,6 @@
         android:text="点我，长按亦可"
         android:textColor="#000000"
         android:textSize="17sp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_msg" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_msg"
+        tools:layout_editor_absoluteX="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
