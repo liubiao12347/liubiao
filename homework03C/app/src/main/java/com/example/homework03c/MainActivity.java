@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     // 初始化用户类型的下拉框
-    private String[] typeArray = {"18990027-刘彪", "学生","教师"};
+    private String[] typeArray = {"社会用户", "内部用户","18990027-刘彪"};
 
     private void initTypeSpinner() {
         // 声明一个下拉列表的数组适配器
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // 设置下拉框的数组适配器
         sp_type.setAdapter(typeAdapter);
         // 设置下拉框默认显示第几项
-        sp_type.setSelection(mType);
+        sp_type.setSelection(2);
 
         // 给下拉框设置选择监听器，一旦用户选中某一项，就触发监听器的onItemSelected方法
         sp_type.setOnItemSelectedListener(new TypeSelectedListener());
