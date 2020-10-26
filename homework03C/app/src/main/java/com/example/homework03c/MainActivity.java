@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         // 在编辑框的输入文本变化前触发
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        public void beforeTextChanged(CharSequence s, int start, int count, int afte) {
         }
 
         // 在编辑框的输入文本变化时触发
@@ -166,10 +166,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return;
             }
             if (rb_password.isChecked()) { // 选择了密码方式校验，此时要跳到找回密码页面
-               // Intent intent = new Intent(this, LoginForgetActivity.class);
-                // 携带手机号码跳转到找回密码页面
-               // intent.putExtra("phone", phone);
-               // startActivityForResult(intent, mRequestCode);
+                Intent intent = new Intent(this, LoginForgetActivity.class);
+                //携带手机号码跳转到找回密码页面
+                intent.putExtra("phone", phone);
+                startActivityForResult(intent, mRequestCode);
             } else if (rb_verifycode.isChecked()) { // 选择了验证码方式校验，此时要生成六位随机数字验证码
                 // 生成六位随机数字的验证码,结果用0填充
                 mVerifyCode = String.format("%06d", (int) ((Math.random() * 9 + 1) * 100000));
