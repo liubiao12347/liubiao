@@ -1,6 +1,7 @@
 package com.example.homework05.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.example.homework05.MainActivity;
 import com.example.homework05.R;
 
 public class LaunchFragment extends Fragment {
@@ -65,7 +67,8 @@ public class LaunchFragment extends Fragment {
             btn_start.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(mContext, "欢迎您开启美好生活", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(mContext, MainActivity.class);
+                    startActivity(intent);
                 }
             });
         }

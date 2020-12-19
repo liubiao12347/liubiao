@@ -9,8 +9,7 @@ import com.example.homework05.adapter.LaunchImproveAdapter;
 
 public class LaunchImproveActivity extends AppCompatActivity {
     // 声明引导页面的图片数组
-    private int[] lanuchImageArray = {R.drawable.kabi,
-            R.drawable.penhuo, R.drawable.tanglang, R.drawable.menhuan};
+    private int[] lanuchImageArray = {R.drawable.kabi, R.drawable.penhuo, R.drawable.tanglang, R.drawable.menhuan};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
